@@ -21,7 +21,7 @@ const menuData = {
       tags: [],
       badge: 'nouveau',
       origin: "Saumon d'Écosse, Label Rouge",
-      image: 'https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&q=80',
+      image: 'https://images.unsplash.com/photo-1648146299690-6ecece7e5c12?fit=crop&h=450&w=600&q=80',
     },
   ],
   plats: [
