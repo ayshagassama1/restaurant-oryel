@@ -6,7 +6,8 @@ import ReservationForm from '../components/restaurant/ReservationForm';
 import ReviewsSection from '../components/restaurant/ReviewsSection';
 import AboutSection from '../components/restaurant/AboutSection';
 import ContactFooter from '../components/restaurant/ContactFooter';
- 
+import ChatBot from '../components/restaurant/ChatBot'; 
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
@@ -18,6 +19,7 @@ export default function Home() {
       <ReviewsSection />
       <AboutSection />
       <ContactFooter />
+      <ChatBot />
     </div>
   );
 }
