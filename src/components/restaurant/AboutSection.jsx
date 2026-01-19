@@ -38,6 +38,21 @@ export default function AboutSection() {
                   </div>
                 </div>
               ))}
+              <div className="flex items-start gap-4 pt-2">
+                <div className="shrink-0">
+                  <img
+                    src="/qualite-mosl.jpg"
+                    alt="Label Qualité Moselle"
+                    className="h-14 w-auto"
+                  />
+                </div>
+                <div className="pt-1">
+                  <p className="font-body font-semibold text-foreground text-sm">Label Qualité Moselle</p>
+                  <p className="font-body text-muted-foreground text-sm">
+                    Établissement certifié pour la qualité de ses produits locaux et de son service.
+                  </p>
+                </div>
+              </div>
             </div>
           </motion.div>
  

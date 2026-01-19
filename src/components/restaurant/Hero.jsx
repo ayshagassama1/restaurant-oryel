@@ -35,7 +35,7 @@ export default function Hero() {
           </p>
  
           <p className="font-body text-white/60 text-sm mb-10">
-            ⭐ 4.8/5 sur Google. Sélection Le Républicain Lorrain 2025
+            Sélection Le Républicain Lorrain 2025
           </p>
  
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
