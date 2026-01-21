@@ -32,3 +32,20 @@
     @apply bg-background text-foreground font-body;
   }
 }
+ 
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+ 
+.scroll-fade.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+@media (max-width: 640px) {
+  .font-heading {
+    line-height: 1.2;
+  }
+}
