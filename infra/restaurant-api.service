@@ -1,0 +1,17 @@
+# Fichier systemd pour démarrer l'API FastAPI automatiquement
+# Copier dans /etc/systemd/system/ sur l'instance EC2
+ 
+[Unit]
+Description=Le Botaniste FastAPI
+After=network.target
+ 
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/restaurant-api/backend
+Environment="PATH=/home/ubuntu/restaurant-api/backend/.venv/bin"
+EnvironmentFile=/home/ubuntu/restaurant-api/backend/.env
+ExecStart=/home/ubuntu/restaurant-api/backend/.venv/bin/uvicorn main:app --host 0.0.0.0 --port 8000
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target
