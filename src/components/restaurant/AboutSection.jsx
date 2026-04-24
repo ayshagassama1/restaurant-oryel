@@ -23,8 +23,8 @@ export default function AboutSection() {
  
             <div className="space-y-5">
               {[
-                { Icon: MapPin, label: 'Adresse', value: '12 rue des Jardins, 57000 Metz' },
-                { Icon: Clock, label: 'Horaires', value: 'Mar–Sam : 12h–14h / 19h–22h', value2: 'Dim : 12h–14h | Lun : fermé' },
+                { Icon: MapPin, label: 'Adresse', value: '12 rue de la Jardinerie, 57000 Metz' },
+                { Icon: Clock, label: 'Horaires', value: 'Mar-Sam : 12h-14h / 19h-22h', value2: 'Dim : 12h-14h | Lun : fermé' },
                 { Icon: Phone, label: 'Téléphone', value: '03 87 12 34 56' },
               ].map(({ Icon, label, value, value2 }) => (
                 <div key={label} className="flex items-start gap-4">
