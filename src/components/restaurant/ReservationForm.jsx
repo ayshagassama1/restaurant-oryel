@@ -456,7 +456,7 @@ export default function ReservationForm() {
                 {step !== 4 && (
                   <div className="border-t border-gray-100 px-6 py-3 flex items-center justify-center gap-2 shrink-0">
                     <span className="font-body text-xs text-gray-400">Rendu possible par</span>
-                    <span className="font-body text-xs font-bold text-gray-500">Zenchef</span>
+                    <span className="font-body text-xs font-bold text-gray-500">Zenmeuf</span>
                   </div>
                 )}
               </motion.div>
