@@ -15,12 +15,12 @@ const menuData = {
       image: 'https://images.unsplash.com/photo-1696721497505-f1fdb13925ba?w=600&q=80',
     },
     {
-      name: 'Tartare de thon rouge',
-      description: 'Thon rouge frais, avocat crémeux, citron vert et coriandre. Servi avec des croûtons maison.',
+      name: 'Tartare de saumon à l\'avocat',
+      description: 'Saumon frais, avocat crémeux, citron vert et coriandre. Servi avec des croûtons maison.',
       price: '13€',
       tags: [],
       badge: 'nouveau',
-      origin: "Thon rouge du Pacifique, Label Rouge",
+      origin: "Saumon de l'Atlantique, Label Rouge",
       image: 'https://images.unsplash.com/photo-1755156593680-d684c0517dc1?w=600&q=80',
     },
     {
