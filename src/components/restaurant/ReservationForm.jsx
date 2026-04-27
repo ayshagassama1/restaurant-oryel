@@ -146,7 +146,7 @@ export default function ReservationForm() {
   const handleSubmit = async () => {
     setSubmitting(true);
     try {
-      await fetch('/api/reservations', {
+      await fetch(`${import.meta.env.VITE_API_URL || ''}/api/reservations`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
