@@ -1,10 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from mangum import Mangum
 from config import settings
 from routes import reservations, chat
- 
+
 app = FastAPI(title="Le Botaniste API")
- 
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.allowed_origins.split(","),
@@ -12,10 +13,12 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
- 
+
 app.include_router(reservations.router, prefix="/api")
 app.include_router(chat.router, prefix="/api")
- 
+
 @app.get("/api/health")
 def health():
     return {"status": "ok"}
+
+handler = Mangum(app)
