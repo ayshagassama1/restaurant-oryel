@@ -83,7 +83,7 @@ export default function InstagramSection() {
           </div>
 
           <a
-            href="https://instagram.com"
+            href="https://oryel.dev"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 font-body text-sm font-semibold text-primary border border-primary/30 px-5 py-2.5 rounded-full hover:bg-primary/5 transition-colors"
