@@ -166,18 +166,6 @@ export default function ReservationForm() {
 
   return (
     <>
-      <section id="reserver" className="py-16 px-4 bg-secondary/50">
-        <div className="max-w-2xl mx-auto text-center">
-          <h2 className="font-heading text-4xl sm:text-5xl font-bold text-foreground mb-4">
-            Réserver une table
-          </h2>
-          <p className="font-body text-muted-foreground text-base max-w-lg mx-auto">
-            Réservation confirmée instantanément selon les créneaux disponibles.
-            Pour les groupes de plus de 8 personnes, appelez-nous.
-          </p>
-        </div>
-      </section>
-
       <button
         onClick={handleOpenModal}
         title="Réserver une table"
@@ -200,11 +188,6 @@ export default function ReservationForm() {
               className="fixed inset-0 z-[98] bg-black/40 backdrop-blur-sm"
             />
 
-            {/*
-              CORRECTIF CLÉ : le centrage est géré par le wrapper flex (fixed inset-0),
-              pas par transform sur le motion.div — ce qui évite le conflit avec
-              l'animation scale de Framer Motion.
-            */}
             <div className="fixed inset-0 z-[99] flex items-center justify-center pointer-events-none px-4">
               <motion.div
                 key="modal"
@@ -351,6 +334,16 @@ export default function ReservationForm() {
                         </motion.div>
                       )}
 
+                      <p className="font-body text-xs text-center text-muted-foreground pt-2">
+                        Groupes de plus de 8 personnes ?{' '}
+                        <a
+                          href="#"
+                          className="text-primary hover:underline"
+                        >
+                          Appelez-nous
+                        </a>
+                      </p>
+                      
                       {/* CTA */}
                       <button
                         disabled={!selectedSlot}
