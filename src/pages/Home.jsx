@@ -7,6 +7,7 @@ import ReviewsSection from '../components/restaurant/ReviewsSection';
 import AboutSection from '../components/restaurant/AboutSection';
 import ContactFooter from '../components/restaurant/ContactFooter';
 import ChatBot from '../components/restaurant/ChatBot'; 
+import HighlightsSection from '../components/restaurant/HighlightsSection';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <MenuSection />
+      <HighlightsSection />
       <ReservationForm />
       <ReviewsSection />
       <AboutSection />
