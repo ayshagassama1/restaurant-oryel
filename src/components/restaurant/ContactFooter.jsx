@@ -1,5 +1,6 @@
+import { Link } from 'react-router-dom';
 import { Leaf, MapPin, Phone, Mail } from 'lucide-react';
- 
+
 export default function ContactFooter() {
   return (
     <footer id="contact" className="bg-foreground text-background">
@@ -28,7 +29,7 @@ export default function ContactFooter() {
                 ))}
               </div>
             </div>
- 
+
             <div>
               <h3 className="font-heading text-lg font-semibold mb-5">Contact</h3>
               <div className="space-y-4 font-body text-sm">
@@ -44,7 +45,7 @@ export default function ContactFooter() {
                 ))}
               </div>
             </div>
- 
+
             <div>
               <h3 className="font-heading text-lg font-semibold mb-5">Nous trouver</h3>
               <div className="rounded-xl overflow-hidden h-44">
@@ -59,16 +60,27 @@ export default function ContactFooter() {
           </div>
         </div>
       </div>
- 
+
       <div className="border-t border-background/10 py-5 px-4">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="font-body text-xs text-background/40">© 2026 Le Botaniste. Tous droits réservés.</p>
           <p className="font-body text-xs text-background/40">
-            Site créé par{' '}
-            <a href="https://oryel.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
-              Oryel
-            </a>
+            © {new Date().getFullYear()} Le Botaniste. Tous droits réservés.
           </p>
+          <div className="flex items-center gap-4">
+            <Link
+              to="/mentions-legales"
+              className="font-body text-xs text-background/40 hover:text-background/70 transition-colors"
+            >
+              Mentions légales
+            </Link>
+            <span className="text-background/20">·</span>
+            <p className="font-body text-xs text-background/40">
+              Site créé par{' '}
+              <a href="https://oryel.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+                Oryel
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
