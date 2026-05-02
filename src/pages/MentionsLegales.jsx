@@ -9,7 +9,6 @@ export default function MentionsLegales() {
 
   return (
     <div className="min-h-screen bg-white font-body">
-      {/* Mini header */}
       <div className="border-b border-gray-100 px-4 py-4">
         <div className="max-w-3xl mx-auto flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 text-foreground">
@@ -34,7 +33,6 @@ export default function MentionsLegales() {
         <h1 className="text-3xl font-heading font-bold text-foreground mb-2">Mentions légales</h1>
         <p className="text-sm text-gray-400 mb-6">Dernière mise à jour : mai 2026</p>
 
-        {/* Bandeau démo */}
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-10">
           <p className="text-sm text-amber-800 leading-relaxed">
             <span className="font-semibold">Ce site est une démonstration fictive</span> réalisée par{' '}
@@ -51,7 +49,6 @@ export default function MentionsLegales() {
           </p>
         </div>
 
-        {/* Éditeur */}
         <section className="mb-10">
           <h2 className="text-lg font-heading font-semibold text-foreground mb-3 pb-2 border-b border-gray-100">
             Éditeur du site
@@ -82,7 +79,6 @@ export default function MentionsLegales() {
           </div>
         </section>
 
-        {/* Hébergement */}
         <section className="mb-10">
           <h2 className="text-lg font-heading font-semibold text-foreground mb-3 pb-2 border-b border-gray-100">
             Hébergement
@@ -94,7 +90,6 @@ export default function MentionsLegales() {
           </div>
         </section>
 
-        {/* Données & formulaire */}
         <section className="mb-10">
           <h2 className="text-lg font-heading font-semibold text-foreground mb-3 pb-2 border-b border-gray-100">
             Données personnelles et formulaires
@@ -120,7 +115,6 @@ export default function MentionsLegales() {
           </div>
         </section>
 
-        {/* Propriété intellectuelle */}
         <section className="mb-10">
           <h2 className="text-lg font-heading font-semibold text-foreground mb-3 pb-2 border-b border-gray-100">
             Propriété intellectuelle
