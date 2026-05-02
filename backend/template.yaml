@@ -1,0 +1,45 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Le Botaniste API - Restaurant demo backend (Oryel)
+
+Parameters:
+  GroqApiKey:
+    Type: String
+    NoEcho: true
+    Description: Groq API key for chatbot
+  AllowedOrigins:
+    Type: String
+    Default: https://restaurant.oryel.dev
+    Description: Comma-separated CORS origins
+
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 512
+    Runtime: python3.12
+    Architectures:
+      - arm64
+
+Resources:
+  RestaurantApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: le-botaniste-api
+      CodeUri: .
+      Handler: main.handler
+      Description: FastAPI backend for restaurant.oryel.dev
+      Environment:
+        Variables:
+          GROQ_API_KEY: !Ref GroqApiKey
+          ALLOWED_ORIGINS: !Ref AllowedOrigins
+      FunctionUrlConfig:
+        AuthType: NONE
+        InvokeMode: BUFFERED
+
+Outputs:
+  FunctionUrl:
+    Description: Public HTTPS endpoint of the Lambda
+    Value: !GetAtt RestaurantApiFunctionUrl.FunctionUrl
+  FunctionArn:
+    Description: ARN of the Lambda function
+    Value: !GetAtt RestaurantApiFunction.Arn
