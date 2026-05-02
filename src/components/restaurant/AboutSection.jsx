@@ -53,7 +53,7 @@ export default function AboutSection() {
                   value: 'Mar-Sam : 12h-14h / 19h-22h',
                   value2: 'Dim : 12h-14h | Lun : fermé',
                 },
-                { Icon: Phone, label: 'Téléphone', value: '03 01 02 03 04' },
+                { Icon: Phone, label: 'Téléphone', value: '03 12 34 56 78' },
               ].map(({ Icon, label, value, value2 }) => (
                 <div key={label} className="flex items-start gap-4">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">

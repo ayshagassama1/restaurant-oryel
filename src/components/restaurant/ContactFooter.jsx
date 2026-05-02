@@ -35,7 +35,7 @@ export default function ContactFooter() {
               <div className="space-y-4 font-body text-sm">
                 {[
                   { Icon: MapPin, text: '12 rue de la Jardinerie, 57000 Metz' },
-                  { Icon: Phone, text: '03 87 12 34 56' },
+                  { Icon: Phone, text: '03 12 34 56 78' },
                   { Icon: Mail, text: 'contact@lebotaniste-metz.fr' },
                 ].map(({ Icon, text }) => (
                   <div key={text} className="flex items-start gap-3">
