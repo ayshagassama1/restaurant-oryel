@@ -8,6 +8,7 @@ import AboutSection from '../components/restaurant/AboutSection';
 import ContactFooter from '../components/restaurant/ContactFooter';
 import ChatBot from '../components/restaurant/ChatBot'; 
 import HighlightsSection from '../components/restaurant/HighlightsSection';
+import InstagramSection from '../components/restaurant/InstagramSection';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <HighlightsSection />
       <ReservationForm />
       <ReviewsSection />
+      <InstagramSection />
       <AboutSection />
       <ContactFooter />
       <ChatBot />
