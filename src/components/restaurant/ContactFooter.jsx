@@ -13,7 +13,11 @@ export default function ContactFooter() {
                 <span className="font-heading text-xl font-semibold">Le Botaniste</span>
               </div>
               <p className="font-body text-sm text-background/60 leading-relaxed">
-                Restaurant de cuisine de saison au coeur de Metz. Produits locaux, terrasse ombragée, réservation recommandée.
+                Site fictif de démonstration réalisé par{' '}
+                <a href="https://oryel.dev" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+                  Oryel
+                </a>
+                . Les informations affichées (restaurant, adresse, tarifs) sont inventées.
               </p>
               <div className="flex gap-3 mt-5">
                 {['instagram', 'facebook'].map((network) => (
